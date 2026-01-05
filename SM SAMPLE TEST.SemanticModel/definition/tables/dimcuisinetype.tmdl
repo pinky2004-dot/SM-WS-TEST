@@ -1,0 +1,37 @@
+table dimcuisinetype
+	lineageTag: 157a0b55-9200-48c5-8a2f-a46ad9d24ee8
+	sourceLineageTag: [dbo].[dimcuisinetype]
+
+	measure TotalAvgCustSpend = SUM(factrestaurant[Average_Customer_Spending])
+		lineageTag: c7f95bf2-6905-4f23-a84c-250f52544648
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Cuisine_Type
+		dataType: string
+		lineageTag: 8d269db4-b97d-44e3-97f2-e77484f37a9b
+		sourceLineageTag: Cuisine_Type
+		summarizeBy: none
+		sourceColumn: Cuisine_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column CuisineTypeID
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d8c9332-f96b-49ea-86e9-d7ab6f3b4605
+		sourceLineageTag: CuisineTypeID
+		summarizeBy: none
+		sourceColumn: CuisineTypeID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimcuisinetype = entity
+		mode: directLake
+		source
+			entityName: dimcuisinetype
+			schemaName: dbo
+			expressionSource: 'DirectLake - SAMPLE_LH_TEST'
+
