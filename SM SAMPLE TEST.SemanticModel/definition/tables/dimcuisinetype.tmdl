@@ -9,6 +9,13 @@ table dimcuisinetype
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure TotalMenuPrice = SUM(factrestaurant[Menu_Price])
+		lineageTag: ff7f4588-cc42-4fe9-ba16-ce59b405a6c0
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Cuisine_Type
 		dataType: string
 		lineageTag: 8d269db4-b97d-44e3-97f2-e77484f37a9b
