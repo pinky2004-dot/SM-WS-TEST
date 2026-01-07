@@ -1,0 +1,11 @@
+expression 'DirectLake - SAMPLE_LH_TEST' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/4e8e7839-ec41-443b-b407-917690635626/fb616a8f-8cc4-4f56-b01f-42e333b4962d", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: ba57125b-07b3-4695-a689-3d4a679d0386
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[sales_raw]"}},"objectType":"Table"}]
+

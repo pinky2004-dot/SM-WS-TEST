@@ -1,0 +1,8 @@
+relationship 647bd478-f8c0-cbb3-38f5-597281e42ccb
+	fromColumn: factrestaurant.CuisineTypeID
+	toColumn: dimcuisinetype.CuisineTypeID
+
+relationship aec3cd82-6a05-05e0-9d26-e2a0a510f4e6
+	fromColumn: factrestaurant.Promotions
+	toColumn: dimpromotions.Promotions
+

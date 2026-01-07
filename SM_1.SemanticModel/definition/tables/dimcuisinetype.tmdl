@@ -1,0 +1,30 @@
+table dimcuisinetype
+	lineageTag: ae06ee8a-a9ee-489e-b64a-17109cd64677
+	sourceLineageTag: [dbo].[dimcuisinetype]
+
+	column Cuisine_Type
+		dataType: string
+		lineageTag: 1e7fd323-b8e5-43c3-a901-0f76b8887353
+		sourceLineageTag: Cuisine_Type
+		summarizeBy: none
+		sourceColumn: Cuisine_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column CuisineTypeID
+		dataType: int64
+		formatString: 0
+		lineageTag: 75bb41fc-a7c9-4971-afac-8f3bc10e51ac
+		sourceLineageTag: CuisineTypeID
+		summarizeBy: none
+		sourceColumn: CuisineTypeID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimcuisinetype = entity
+		mode: directLake
+		source
+			entityName: dimcuisinetype
+			schemaName: dbo
+			expressionSource: 'DirectLake - SAMPLE_LH_TEST'
+
