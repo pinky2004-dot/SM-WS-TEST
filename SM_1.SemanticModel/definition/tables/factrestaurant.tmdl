@@ -9,6 +9,13 @@ table factrestaurant
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure AvgMarketingSpend = AVERAGE(factrestaurant[Marketing_Spend])
+		lineageTag: 666c493e-125b-4fb7-b9fb-5ef5d1a98ae1
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Number_of_Customers
 		dataType: int64
 		formatString: 0
