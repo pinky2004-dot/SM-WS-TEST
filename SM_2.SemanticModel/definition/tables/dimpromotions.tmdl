@@ -1,0 +1,30 @@
+table dimpromotions
+	lineageTag: e278d372-c7c4-4c91-a5fd-7c688297e4a8
+	sourceLineageTag: [dbo].[dimpromotions]
+
+	column Promotions
+		dataType: int64
+		formatString: 0
+		lineageTag: 821c162a-a3ef-4cd4-b1d1-f4f2d98a794b
+		sourceLineageTag: Promotions
+		summarizeBy: none
+		sourceColumn: Promotions
+
+		annotation SummarizationSetBy = Automatic
+
+	column PromotionName
+		dataType: string
+		lineageTag: 9cc171e1-65b7-4e8b-a4bb-2d3abc2e6f1c
+		sourceLineageTag: PromotionName
+		summarizeBy: none
+		sourceColumn: PromotionName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimpromotions = entity
+		mode: directLake
+		source
+			entityName: dimpromotions
+			schemaName: dbo
+			expressionSource: 'DirectLake - SAMPLE_LH_TEST'
+
