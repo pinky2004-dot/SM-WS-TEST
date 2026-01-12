@@ -1,0 +1,95 @@
+table factrestaurant
+	lineageTag: 11ff7a68-f501-4b25-a0ae-b198d3f9de51
+	sourceLineageTag: [dbo].[factrestaurant]
+
+	column Number_of_Customers
+		dataType: int64
+		formatString: 0
+		lineageTag: 6df5a81c-6d35-47aa-81ef-7d4ba0f70614
+		sourceLineageTag: Number_of_Customers
+		summarizeBy: sum
+		sourceColumn: Number_of_Customers
+
+		annotation SummarizationSetBy = Automatic
+
+	column Menu_Price
+		dataType: double
+		lineageTag: c25f61fc-457a-4c10-9faf-05c3c485d060
+		sourceLineageTag: Menu_Price
+		summarizeBy: sum
+		sourceColumn: Menu_Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Marketing_Spend
+		dataType: double
+		lineageTag: dcb4d71f-a84a-4728-b441-4b629936a717
+		sourceLineageTag: Marketing_Spend
+		summarizeBy: sum
+		sourceColumn: Marketing_Spend
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Average_Customer_Spending
+		dataType: double
+		lineageTag: 0adcc76a-d11f-4d52-a4cd-791628982e26
+		sourceLineageTag: Average_Customer_Spending
+		summarizeBy: sum
+		sourceColumn: Average_Customer_Spending
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Promotions
+		dataType: int64
+		formatString: 0
+		lineageTag: f9e9ae38-d374-46d8-abdb-16c4168dd069
+		sourceLineageTag: Promotions
+		summarizeBy: sum
+		sourceColumn: Promotions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reviews
+		dataType: int64
+		formatString: 0
+		lineageTag: 032ab956-5a1a-4cc7-92d8-c71204787cf2
+		sourceLineageTag: Reviews
+		summarizeBy: sum
+		sourceColumn: Reviews
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monthly_Revenue
+		dataType: double
+		lineageTag: 7ef611e7-c643-400a-b790-02da0e7e9682
+		sourceLineageTag: Monthly_Revenue
+		summarizeBy: sum
+		sourceColumn: Monthly_Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CuisineTypeID
+		dataType: int64
+		formatString: 0
+		lineageTag: d46c7770-2c3c-4978-beed-4a175697af23
+		sourceLineageTag: CuisineTypeID
+		summarizeBy: count
+		sourceColumn: CuisineTypeID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition factrestaurant = entity
+		mode: directLake
+		source
+			entityName: factrestaurant
+			schemaName: dbo
+			expressionSource: 'DirectLake - SAMPLE_LH_TEST'
+
