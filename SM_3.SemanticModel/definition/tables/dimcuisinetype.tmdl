@@ -16,7 +16,7 @@ table dimcuisinetype
 		formatString: 0
 		lineageTag: c30cadbe-2ca1-4ad6-8c60-90f069b6ff74
 		sourceLineageTag: CuisineTypeID
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: CuisineTypeID
 
 		annotation SummarizationSetBy = Automatic

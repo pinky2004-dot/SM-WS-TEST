@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["DirectLake - SAMPLE_LH_TEST"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["RemoteModeling","DirectLakeOnOneLakeCreatedInDesktop"]
+annotation PBI_ProTooling = ["RemoteModeling","DirectLakeOnOneLakeCreatedInDesktop","DirectLakeOnOneLakeInWeb","WebModelingEdit"]
 
 ref table dimcuisinetype
 ref table dimpromotions
