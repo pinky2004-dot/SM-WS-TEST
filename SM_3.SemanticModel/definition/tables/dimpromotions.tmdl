@@ -7,7 +7,7 @@ table dimpromotions
 		formatString: 0
 		lineageTag: 50a3ef16-6fc9-41b5-b94f-ea96acf60a65
 		sourceLineageTag: Promotions
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Promotions
 
 		annotation SummarizationSetBy = Automatic
