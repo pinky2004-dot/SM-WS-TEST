@@ -1,0 +1,8 @@
+relationship 5095e62a-de7d-d423-2b9b-2e423887db60
+	fromColumn: SCT_APPOINTMENTS.LOCATION_ID
+	toColumn: SCT_LOCATIONS.LOCATION_ID
+
+relationship 5be911f3-9fdf-78b9-8d19-7ad7d6ea7f3c
+	fromColumn: SCT_APPOINTMENTS.PROVIDER_ID
+	toColumn: SCT_PROVIDERS.PROVIDER_ID
+

@@ -1,0 +1,180 @@
+table SCT_PROVIDERS
+	lineageTag: 85502ee4-94dc-4001-a588-82b3f9e35929
+	sourceLineageTag: [dbo].[SCT_PROVIDERS]
+
+	column PROVIDER_ID
+		dataType: double
+		lineageTag: 52ee20fd-81c4-4791-ac16-9d434f23fd09
+		sourceLineageTag: PROVIDER_ID
+		summarizeBy: none
+		sourceColumn: PROVIDER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NPI
+		dataType: string
+		lineageTag: 60864d64-787e-415e-ae24-dc8459fc7640
+		sourceLineageTag: NPI
+		summarizeBy: none
+		sourceColumn: NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINE1
+		dataType: string
+		lineageTag: 7f28d9c9-cf11-4e15-bb89-6f63c57f281c
+		sourceLineageTag: LINE1
+		summarizeBy: none
+		sourceColumn: LINE1
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINE2
+		dataType: string
+		lineageTag: 583ea48c-0181-4577-8180-6c67c264328d
+		sourceLineageTag: LINE2
+		summarizeBy: none
+		sourceColumn: LINE2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SPECIALTY
+		dataType: string
+		lineageTag: 22ee06ce-aa4b-43a7-9454-d3e27b205e44
+		sourceLineageTag: SPECIALTY
+		summarizeBy: none
+		sourceColumn: SPECIALTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column SPECIALTY_CODE
+		dataType: string
+		lineageTag: fb815423-d740-459a-9d3d-ccd338cda657
+		sourceLineageTag: SPECIALTY_CODE
+		summarizeBy: none
+		sourceColumn: SPECIALTY_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column _METADATA__TIMESTAMP
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: edda91b6-4476-4853-aa87-8d6d3b9d9817
+		sourceLineageTag: _METADATA__TIMESTAMP
+		summarizeBy: none
+		sourceColumn: _METADATA__TIMESTAMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column MNEMONIC
+		dataType: string
+		lineageTag: 3f3b93d6-3775-4fce-9a67-6afcbb60aa62
+		sourceLineageTag: MNEMONIC
+		summarizeBy: none
+		sourceColumn: MNEMONIC
+
+		annotation SummarizationSetBy = Automatic
+
+	column PREFIX
+		dataType: string
+		lineageTag: 1a84ea57-b4cd-4ef3-b265-7a25839f7d55
+		sourceLineageTag: PREFIX
+		summarizeBy: none
+		sourceColumn: PREFIX
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_ORGANIZATION
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9ff440fc-ca95-43fb-a8e3-184d53d664b8
+		sourceLineageTag: IS_ORGANIZATION
+		summarizeBy: none
+		sourceColumn: IS_ORGANIZATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		lineageTag: bf9f8496-c56b-4549-bb94-be25effe9a40
+		sourceLineageTag: STATUS
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISPLAY_NAME
+		dataType: string
+		lineageTag: 4074049d-4437-4151-8b26-7362c3fb8ac2
+		sourceLineageTag: DISPLAY_NAME
+		summarizeBy: none
+		sourceColumn: DISPLAY_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column TAXONOMY_CODE
+		dataType: string
+		lineageTag: 1d625738-61dc-41ae-9d27-0b1ec4e0795e
+		sourceLineageTag: TAXONOMY_CODE
+		summarizeBy: none
+		sourceColumn: TAXONOMY_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVIDER_GUID
+		dataType: string
+		lineageTag: e6c8d841-0ef2-4800-86a2-31d6ee2a4dad
+		sourceLineageTag: PROVIDER_GUID
+		summarizeBy: none
+		sourceColumn: PROVIDER_GUID
+
+		annotation SummarizationSetBy = Automatic
+
+	column BUSINESS_ENTITY_ID
+		dataType: double
+		lineageTag: d49873ac-420b-4cb3-be45-df083e6a615a
+		sourceLineageTag: BUSINESS_ENTITY_ID
+		summarizeBy: none
+		sourceColumn: BUSINESS_ENTITY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SUFFIX
+		dataType: string
+		lineageTag: 2df54907-5ec7-4f7b-bd55-a38c19359a42
+		sourceLineageTag: SUFFIX
+		summarizeBy: none
+		sourceColumn: SUFFIX
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEA_NUMBER
+		dataType: string
+		lineageTag: 70856b1e-7ed0-422d-a70f-78bf34be610a
+		sourceLineageTag: DEA_NUMBER
+		summarizeBy: none
+		sourceColumn: DEA_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column UPDATED_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1945fc16-7885-43bb-892f-90f5199bff65
+		sourceLineageTag: UPDATED_AT
+		summarizeBy: none
+		sourceColumn: UPDATED_AT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SCT_PROVIDERS = entity
+		mode: directLake
+		source
+			entityName: SCT_PROVIDERS
+			schemaName: dbo
+			expressionSource: 'DirectLake - LH_Carecloud_TW'
+

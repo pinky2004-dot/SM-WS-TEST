@@ -1,0 +1,11 @@
+expression 'DirectLake - LH_Carecloud_TW' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/9017a2a7-8d6c-44be-be09-09b0f94aacd4/2dfe8130-136a-4a98-9cdf-b96deb479f56", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 014ee07f-48a6-442f-a869-0d9fdc95792d
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[SCT_MSA_linkage]"}},"objectType":"Table"}]
+
