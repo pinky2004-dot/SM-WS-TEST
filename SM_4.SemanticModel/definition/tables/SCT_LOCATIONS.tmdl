@@ -1,0 +1,188 @@
+table SCT_LOCATIONS
+	lineageTag: cb1bba15-1ce6-4392-8f2d-f1f027d0e10e
+	sourceLineageTag: [dbo].[SCT_LOCATIONS]
+
+	column LOCATION_ID
+		dataType: double
+		lineageTag: b912fb14-c6d7-4263-99a3-e45dd16e689a
+		sourceLineageTag: LOCATION_ID
+		summarizeBy: none
+		sourceColumn: LOCATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column COUNTRY
+		dataType: string
+		lineageTag: ea299cdb-3b92-4139-bb48-999e83fcae66
+		sourceLineageTag: COUNTRY
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTY_NAME
+		dataType: string
+		lineageTag: 3153d7ad-a121-4c1f-aa6e-f23bc77aa74b
+		sourceLineageTag: COUNTY_NAME
+		summarizeBy: none
+		sourceColumn: COUNTY_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column FDA_NUMBER
+		dataType: string
+		lineageTag: 50d823dc-a237-4348-9dee-18444c383c5d
+		sourceLineageTag: FDA_NUMBER
+		summarizeBy: none
+		sourceColumn: FDA_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIA_NUMBER
+		dataType: string
+		lineageTag: 0dfd4ab7-0a61-4370-8cd8-9ad543c0b511
+		sourceLineageTag: CLIA_NUMBER
+		summarizeBy: none
+		sourceColumn: CLIA_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column NPI
+		dataType: string
+		lineageTag: be7d1df6-9f2b-4995-b578-b04c298bfbc8
+		sourceLineageTag: NPI
+		summarizeBy: none
+		sourceColumn: NPI
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINE2
+		dataType: string
+		lineageTag: 46598cbe-34d8-49bb-8ee3-abf39ec70984
+		sourceLineageTag: LINE2
+		summarizeBy: none
+		sourceColumn: LINE2
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		lineageTag: facf4ace-b5dd-4a6b-a45f-3249526e70fe
+		sourceLineageTag: STATUS
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column UPDATED_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 08ccb628-7331-4a6d-af47-de259553cecc
+		sourceLineageTag: UPDATED_AT
+		summarizeBy: none
+		sourceColumn: UPDATED_AT
+
+		annotation SummarizationSetBy = Automatic
+
+	column _METADATA__TIMESTAMP
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d64f3a3f-b182-430c-a483-81aa9a999213
+		sourceLineageTag: _METADATA__TIMESTAMP
+		summarizeBy: none
+		sourceColumn: _METADATA__TIMESTAMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column NAME
+		dataType: string
+		lineageTag: a0ec1629-d114-4104-a01f-3abbf13e6b1e
+		sourceLineageTag: NAME
+		summarizeBy: none
+		sourceColumn: NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOCALITY
+		dataType: string
+		lineageTag: 9f157f68-f0f6-4bc1-a53f-9bf9af2af028
+		sourceLineageTag: LOCALITY
+		summarizeBy: none
+		sourceColumn: LOCALITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column LINE1
+		dataType: string
+		lineageTag: e52f58a1-6576-4050-9510-45bdcfed2835
+		sourceLineageTag: LINE1
+		summarizeBy: none
+		sourceColumn: LINE1
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLACE_OF_SERVICES_CODE
+		dataType: string
+		lineageTag: 6d7bbf06-140c-431d-b519-73b3480938d1
+		sourceLineageTag: PLACE_OF_SERVICES_CODE
+		summarizeBy: none
+		sourceColumn: PLACE_OF_SERVICES_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLACE_OF_SERVICES
+		dataType: string
+		lineageTag: 0de79658-3bed-4b0b-b76d-b83f46e77fdd
+		sourceLineageTag: PLACE_OF_SERVICES
+		summarizeBy: none
+		sourceColumn: PLACE_OF_SERVICES
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOCATION_TYPE
+		dataType: string
+		lineageTag: e252c938-6d11-4e03-af0b-7a42e2b54f49
+		sourceLineageTag: LOCATION_TYPE
+		summarizeBy: none
+		sourceColumn: LOCATION_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOCATION_GUID
+		dataType: string
+		lineageTag: 043df523-aef0-4974-8027-6e9f2333a5eb
+		sourceLineageTag: LOCATION_GUID
+		summarizeBy: none
+		sourceColumn: LOCATION_GUID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MNEMONIC
+		dataType: string
+		lineageTag: bca58e3a-20e2-467c-a137-f7bd24db9308
+		sourceLineageTag: MNEMONIC
+		summarizeBy: none
+		sourceColumn: MNEMONIC
+
+		annotation SummarizationSetBy = Automatic
+
+	column BUSINESS_ENTITY_ID
+		dataType: double
+		lineageTag: 819979d3-8105-4da4-ada9-d56d7a739b18
+		sourceLineageTag: BUSINESS_ENTITY_ID
+		summarizeBy: none
+		sourceColumn: BUSINESS_ENTITY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition SCT_LOCATIONS = entity
+		mode: directLake
+		source
+			entityName: SCT_LOCATIONS
+			schemaName: dbo
+			expressionSource: 'DirectLake - LH_Carecloud_TW'
+

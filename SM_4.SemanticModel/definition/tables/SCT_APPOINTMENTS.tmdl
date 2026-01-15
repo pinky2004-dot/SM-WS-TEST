@@ -1,0 +1,261 @@
+table SCT_APPOINTMENTS
+	lineageTag: 92e48d1c-276d-4849-8390-17565dbb4c65
+	sourceLineageTag: [dbo].[SCT_APPOINTMENTS]
+
+	column APPOINTMENT_ID
+		dataType: double
+		lineageTag: 5949859b-291c-40da-b562-ff311192546b
+		sourceLineageTag: APPOINTMENT_ID
+		summarizeBy: count
+		sourceColumn: APPOINTMENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RESOURCE_NAME
+		dataType: string
+		lineageTag: 3616151d-3538-4f8c-8a41-d2ce7a8c7ada
+		sourceLineageTag: RESOURCE_NAME
+		summarizeBy: none
+		sourceColumn: RESOURCE_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXAM_ROOM
+		dataType: string
+		lineageTag: 6a93d26b-44ae-4e0f-850d-d9c242707739
+		sourceLineageTag: EXAM_ROOM
+		summarizeBy: none
+		sourceColumn: EXAM_ROOM
+
+		annotation SummarizationSetBy = Automatic
+
+	column START_TIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bc86371c-06d3-4815-a347-d124de8649c9
+		sourceLineageTag: START_TIME
+		summarizeBy: none
+		sourceColumn: START_TIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column END_TIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ae5b12a9-138c-4807-bde7-97e27434507c
+		sourceLineageTag: END_TIME
+		summarizeBy: none
+		sourceColumn: END_TIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column APPOINTMENT_COMMENTS
+		dataType: string
+		lineageTag: 2623e766-d3bb-4b81-b59d-25ccb3532bef
+		sourceLineageTag: APPOINTMENT_COMMENTS
+		summarizeBy: none
+		sourceColumn: APPOINTMENT_COMMENTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column REASON_FOR_VISIT
+		dataType: string
+		lineageTag: c01d35cf-0326-4259-be9c-5d5220840e59
+		sourceLineageTag: REASON_FOR_VISIT
+		summarizeBy: none
+		sourceColumn: REASON_FOR_VISIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PATIENT_ID
+		dataType: double
+		lineageTag: d5742a71-2a0d-4280-a12c-ab95a75abb7f
+		sourceLineageTag: PATIENT_ID
+		summarizeBy: count
+		sourceColumn: PATIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LOCATION_ID
+		dataType: double
+		lineageTag: dbaaab66-e929-4ebe-a308-91abe66e3f2a
+		sourceLineageTag: LOCATION_ID
+		summarizeBy: none
+		sourceColumn: LOCATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PROVIDER_ID
+		dataType: double
+		lineageTag: 5f18357f-48cd-4427-95bb-f02534721a54
+		sourceLineageTag: PROVIDER_ID
+		summarizeBy: none
+		sourceColumn: PROVIDER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column APPOINTMENT_STATUS
+		dataType: string
+		lineageTag: 446b779e-b0b1-4e47-9659-da619cffb051
+		sourceLineageTag: APPOINTMENT_STATUS
+		summarizeBy: none
+		sourceColumn: APPOINTMENT_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column NATURE_OF_VISIT_ID
+		dataType: double
+		lineageTag: 512d62bf-5e87-45cb-9047-67ec60e46e84
+		sourceLineageTag: NATURE_OF_VISIT_ID
+		summarizeBy: count
+		sourceColumn: NATURE_OF_VISIT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column NATURE_OF_VISIT
+		dataType: string
+		lineageTag: 96270ad4-200b-4998-bc25-b9ab1c32e07d
+		sourceLineageTag: NATURE_OF_VISIT
+		summarizeBy: none
+		sourceColumn: NATURE_OF_VISIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column AUTHORIZATION_ID
+		dataType: double
+		lineageTag: 1466aa9f-a94c-4767-bbe0-cf751fa2d15b
+		sourceLineageTag: AUTHORIZATION_ID
+		summarizeBy: count
+		sourceColumn: AUTHORIZATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UPDATED_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e2f3ce31-8e15-40ee-942c-b7abc977937b
+		sourceLineageTag: UPDATED_AT
+		summarizeBy: none
+		sourceColumn: UPDATED_AT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CREATED_AT
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 94b30dd4-e199-4e04-aa14-e262383c63ad
+		sourceLineageTag: CREATED_AT
+		summarizeBy: none
+		sourceColumn: CREATED_AT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CREATED_BY_USER_ID
+		dataType: double
+		lineageTag: 3c70c391-ed39-4ca4-acfe-ef70c107de8f
+		sourceLineageTag: CREATED_BY_USER_ID
+		summarizeBy: count
+		sourceColumn: CREATED_BY_USER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UPDATED_BY_USER_ID
+		dataType: double
+		lineageTag: aea6f7fe-dd3d-4a74-8fdf-6db29a964b64
+		sourceLineageTag: UPDATED_BY_USER_ID
+		summarizeBy: count
+		sourceColumn: UPDATED_BY_USER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column _METADATA__TIMESTAMP
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0c3f1ac1-e549-46fb-91d9-b5d29c5fafae
+		sourceLineageTag: _METADATA__TIMESTAMP
+		summarizeBy: none
+		sourceColumn: _METADATA__TIMESTAMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANCELLATION_REASON
+		dataType: string
+		lineageTag: 95c6525f-110f-4a4a-bf06-dfe753a86fac
+		sourceLineageTag: CANCELLATION_REASON
+		summarizeBy: none
+		sourceColumn: CANCELLATION_REASON
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANCELLATION_COMMENTS
+		dataType: string
+		lineageTag: c4ccf38e-4d6d-4fa6-bfb5-2e99393c69f9
+		sourceLineageTag: CANCELLATION_COMMENTS
+		summarizeBy: none
+		sourceColumn: CANCELLATION_COMMENTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PATIENT_INSTRUCTIONS
+		dataType: string
+		lineageTag: 1c6b1de4-d23e-4d9d-b7cb-281119fbc16b
+		sourceLineageTag: PATIENT_INSTRUCTIONS
+		summarizeBy: none
+		sourceColumn: PATIENT_INSTRUCTIONS
+
+		annotation SummarizationSetBy = Automatic
+
+	column APPOINTMENT_GUID
+		dataType: string
+		lineageTag: 20e99125-6398-4c92-a1b7-37b8d542d74a
+		sourceLineageTag: APPOINTMENT_GUID
+		summarizeBy: none
+		sourceColumn: APPOINTMENT_GUID
+
+		annotation SummarizationSetBy = Automatic
+
+	column INSURANCE_PROFILE_ID
+		dataType: double
+		lineageTag: bf137390-ad72-403d-aff3-78c544c57646
+		sourceLineageTag: INSURANCE_PROFILE_ID
+		summarizeBy: count
+		sourceColumn: INSURANCE_PROFILE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BUSINESS_ENTITY_ID
+		dataType: double
+		lineageTag: 4f59c582-e6ee-43d2-936d-21ddb1bc1f7c
+		sourceLineageTag: BUSINESS_ENTITY_ID
+		summarizeBy: count
+		sourceColumn: BUSINESS_ENTITY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition SCT_APPOINTMENTS = entity
+		mode: directLake
+		source
+			entityName: SCT_APPOINTMENTS
+			schemaName: dbo
+			expressionSource: 'DirectLake - LH_Carecloud_TW'
+
