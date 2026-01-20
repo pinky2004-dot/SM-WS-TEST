@@ -136,7 +136,7 @@ table SCT_PROVIDERS
 		dataType: double
 		lineageTag: d49873ac-420b-4cb3-be45-df083e6a615a
 		sourceLineageTag: BUSINESS_ENTITY_ID
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: BUSINESS_ENTITY_ID
 
 		annotation SummarizationSetBy = Automatic

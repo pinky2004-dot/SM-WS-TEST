@@ -10,7 +10,7 @@ annotation PBI_QueryOrder = ["DirectLake - LH_Carecloud_TW"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["RemoteModeling","DirectLakeOnOneLakeCreatedInDesktop"]
+annotation PBI_ProTooling = ["RemoteModeling","DirectLakeOnOneLakeCreatedInDesktop","DirectLakeOnOneLakeInWeb","WebModelingEdit"]
 
 ref table SCT_APPOINTMENTS
 ref table SCT_LOCATIONS
